@@ -81,12 +81,10 @@ public class Series_Numericas {
         for (int i = 0; i < numeroDeTerminos; i++) {
             System.out.print(secuencia + " ");
             if (patron == 4) {
-                patron = 1 ;
-                segundoNumero = patron * 2;
-            } else {
-                patron = patron * 2;
+                patron = 2;
             }
-            secuencia = primerNumero + segundoNumero;
+            secuencia = secuencia + patron;
+            patron = patron * 2;
         } System.out.println();
     }
 }
